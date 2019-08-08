@@ -67,6 +67,8 @@ void matrix_set(matrix_t m, double *a){
 }
 
 double matrix_getelem(matrix_t m, unsigned long i, unsigned long j){
+    if(m->a == NULL || i>= m->n || j>= m->n)
+        _Exit(1);
     return (m->a + (i*m->n+j)/VECT_NDOUBLE)->df[(i*m->n+j)%VECT_NDOUBLE];
 }
 
