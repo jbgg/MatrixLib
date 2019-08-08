@@ -20,10 +20,10 @@ LDLIB= -lc
 
 
 %.o : %.S
-	$(CC) -c $(ASFLAGS) $(MCPU) $(VECTORFLAGS) -o $@ $^
+	$(CC) -c $(ASFLAGS) $(MCPU) $(DEBUG) -o $@ $^
 
 %.o : %.c
-	$(CC) -c $(CFLAGS) $(MCPU) $(VECTORFLAGS) -o $@ $^
+	$(CC) -c $(CFLAGS) $(MCPU) $(DEBUG) -o $@ $^
 
 $(prog) : $(obj)
 	$(LD) $(LDFLAGS) -o $(prog) $(obj) $(LDLIB)
