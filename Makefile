@@ -1,7 +1,4 @@
-
-# TODO:
-# 	- create a tool for detecting SIMD instructions
-# 	- 
+# Makefile
 
 prog=prog
 
@@ -11,6 +8,8 @@ all : $(prog)
 
 CC=gcc
 CFLAGS= -Iinclude -O3 -Wall
+
+# TODO: add a tool for detecting SIMD instructions set at compile time
 MCPU= -mavx -mavx2 -mfma
 
 ASFLAGS= -Iinclude
