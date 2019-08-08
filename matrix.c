@@ -5,6 +5,11 @@
 
 #include <matrix.h>
 
+
+int matrix_checkmach(){
+    return vect_checkmach();
+}
+
 void matrix_init(matrix_t m, unsigned long n){
 
     /* matrix of order 0 ? */

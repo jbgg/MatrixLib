@@ -16,6 +16,7 @@ typedef struct {
 typedef _matrix_struct matrix_t[1];
 typedef _matrix_struct *matrix_ptr;
 
+int matrix_checkmach();
 
 void matrix_init(matrix_t, unsigned long);
 void matrix_clear(matrix_t);

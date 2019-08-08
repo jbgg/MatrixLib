@@ -23,5 +23,7 @@ typedef union {
 
 #endif
 
+int vect_checkmach();
+
 #endif /* __VECTOR_H__ */
 

@@ -2,7 +2,7 @@
 
 prog=prog
 
-obj=main.o matrix.o
+obj=main.o matrix.o vector.o
 
 all : $(prog)
 
@@ -10,7 +10,7 @@ CC=gcc
 CFLAGS= -Iinclude -O3 -Wall
 
 # TODO: add a tool for detecting SIMD instructions set at compile time
-MCPU= -mavx -mavx2 -mfma
+MCPU= -mavx2 -mfma -maes -mpclmul -mf16c
 
 ASFLAGS= -Iinclude
 
